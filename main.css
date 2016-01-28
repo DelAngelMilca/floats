@@ -5,17 +5,21 @@
 	background-color: red;
 }
 .azul {
-	background-color: blue;
+	background-color:blue;
 }
 div {
 	height:100px;
 	width: 25%;
+	float:left;
 }
 .contenedor {
-	height:300px;
 	width:700px;
-	border: 1px solid #800000;
+	border: 1px solid black;
 }
-.clearfix:afther{
+.clearfix:before, .clear:after{
+	content:" ";
+	display:table;
+}
+.clearfix:after{
 	clear:both;
 }
